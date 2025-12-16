@@ -30,9 +30,12 @@ Software required:Pycharm.
    pip install -r 'requirement.txt'
    
 # 1.Train
-  1.1 Please run 'MainCondition_new.py' and change the 'state' to 'train' and 'path' to the location of your dataset, you can adjust the hyper parameters as needed.  
-  1.2 Preprocess the image: Cut the porous media slice into 64 * 64 * 64 size pictures. The image can be find at https://digitalporousmedia.org/published-datasets/drp.project.published.DRP-374/digital_dataset/f56f99e7-8600-4d26-badf-541dd940a773.
-  1.3 Regarding the training parameters in 'MainCondition_new.py', 'epoch' represents the number of training iterations, 'batch_size' refers to the number of training batches, and 'T' represents the time step in the diffusion model equation, typically set to 1000. A value of 500 will result in lower resolution effects. 'channel' represents the number of channels to adjust based on hardware requirements. 'labels' corresponds to the porosity parameter, 'label1' represents the average pore diameter, 'label2' represents the standard deviation of pore diameter, 'label3' represents the average throat diameter, 'label4' represents the standard deviation of throat diameter,'label5' represents the average coordination number, 'label6' represents the standard deviation of coordination number.For the description of other parameters, please refer to the paper.
+  # 1.1
+  Please run 'MainCondition_new.py' and change the 'state' to 'train' and 'path' to the location of your dataset, you can adjust the hyper parameters as needed.  
+ # 1.2 
+ Preprocess the image: Cut the porous media slice into 64 * 64 * 64 size pictures. The image can be find at https://digitalporousmedia.org/published-datasets/drp.project.published.DRP-374/digital_dataset/f56f99e7-8600-4d26-badf-541dd940a773.
+  # 1.3
+  Regarding the training parameters in 'MainCondition_new.py', 'epoch' represents the number of training iterations, 'batch_size' refers to the number of training batches, and 'T' represents the time step in the diffusion model equation, typically set to 1000. A value of 500 will result in lower resolution effects. 'channel' represents the number of channels to adjust based on hardware requirements. 'labels' corresponds to the porosity parameter, 'label1' represents the average pore diameter, 'label2' represents the standard deviation of pore diameter, 'label3' represents the average throat diameter, 'label4' represents the standard deviation of throat diameter,'label5' represents the average coordination number, 'label6' represents the standard deviation of coordination number.For the description of other parameters, please refer to the paper.
   
 # 2.Test
    After the training process, if you want to try to generate porous media, you can run 'MainCondition_new.py' file , and change state to eval and a series of locations.The constructions will be saved in the 'npydata' folder.
