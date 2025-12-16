@@ -26,17 +26,9 @@ Hardware requirements: RTX 4090.
 Program language: Python/Pytorch.
 Software required:Pycharm.
 
-
 # Installation
    pip install -r 'requirement.txt'
    
-# How to use？
-First, preprocess the image: Cut the porous media slice into 64 * 64 * 64 size pictures. Each training image consists of 64 pictures of size 64 * 64, stored in a separate folder. Then use use scripts/preparedata.py to convert the image into .npy format.
-
-Secondly, set the network parameters such as batchsize, learning rate and storage location. The executable .py file of IWGAN-GP, the path is: IWGAN-GP/IWGAN-GP.py. After configuring the parameters and environment, you can run directly: python IWGAN-GP.py
-
-Finally, in IWGAN-GP/savepoint/Test, find the loss images during the training process and the .npy format of the porous media three-dimensional structure images of different rounds. Use scripts/loadnpy to convert .npy to .txt format for later analysis and processing.
-
 # 1.Train
   1.1 Please run 'MainCondition_new.py' and change the 'state' to 'train' and 'path' to the location of your dataset, you can adjust the hyper parameters as needed.  
   1.2 Preprocess the image: Cut the porous media slice into 64 * 64 * 64 size pictures. The image can be find at https://digitalporousmedia.org/published-datasets/drp.project.published.DRP-374/digital_dataset/f56f99e7-8600-4d26-badf-541dd940a773.
