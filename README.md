@@ -4,7 +4,7 @@ Python implementation code for the paper titled,
 
 Authors: Ting Zhang a,b, Boyu Zhang a, Lei Wang b,c, Yi Du d,*
 
-a. College of Computer Science and Technology, Shanghai University of Electric Power, Shanghai 200090, China 
+a. Faculty of Artificial Intelligence, Shanghai University of Electric Power, Shanghai 200090, China 
 
 b. State Key Laboratory of Oil and Gas Reservoir Geology and Exploitation, Chengdu University of Technology, Chengdu 610059, China
 
