@@ -1,4 +1,4 @@
-This is the corresponding code for the paper “3D stochastic reconstruction of microstructures in porous materials based on a multi-conditional denoising diffusion implicit model.”
+This is the corresponding code for the paper “Three-dimensional stochastic reconstruction of microstructures in porous materials using a multi-conditional denoising diffusion implicit model.”
 
 Python implementation code for the paper titled,
 
